@@ -35,8 +35,12 @@ cc.Class({
 
     openPrefab: function() {
         cc.loader.loadRes('prefabA', cc.Prefab, (err, prefab) => {
-            let prefabA = cc.instantiate(prefab);
-            cc.find('Canvas').addChild(prefabA);
+        	if (err) {
+        		console.log('加载失败');
+        	} else {
+        		let prefabA = cc.instantiate(prefab);
+            	cc.find('Canvas').addChild(prefabA);
+        	}
         });
     }
 });

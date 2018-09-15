@@ -14,7 +14,7 @@ else
     echo "Auto Exported CocosCreator Path:"$ccp
 fi
 
-CocosCreator --path .  --build "a1897856-c0a7-4c4f-afb5-4d8f0919c7aa;debug=false;title=Game56Hall;packageName=com.game56.hall;inlineSpriteFrames=true"
+CocosCreator --path .  --build "42da2396-d8b4-4f53-9ff6-19818b263da2;platform=android;debug=false;template=default;debug=false;title=hotupdateDemo;packageName=com.hotupdateDemo;inlineSpriteFrames=true"
 rm -rf native
 SUBGAME_VERSION=$1
 REMOTE_URL="http://127.0.0.1/subgame/"
